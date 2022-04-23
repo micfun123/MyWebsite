@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    transition: background 0.5s ease-in-out, color 1s ease-in-out;
 }
 
 ul {
@@ -32,7 +35,7 @@ a{
 
 header {
     padding: 1em;
-    background-color: red;
+    background-color: var(--border-color);
     margin-bottom: 1em;
     padding-bottom: 3.5em;
     text-align: center;
@@ -44,7 +47,7 @@ header {
     width: 500px;
     opacity: 0;
     z-index: 2;
-    background: blue;
+    background: var(--bg-dropdown);
 
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -86,4 +89,76 @@ header {
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
+}
+
+/* Themes*/
+
+
+:root{
+
+    --grey0 : #1a1a1a;
+    --grey1 : #1d1d1d;
+    --grey2 : #2d2d2d;
+    --grey3 : #3d3d3d;
+    --grey4 : #4d4d4d;
+    --grey5 : #5d5d5d;
+    --grey6 : #6d6d6d;
+    --grey7 : #7d7d7d;
+    --grey8 : #8d8d8d;
+    --grey9 : #9d9d9d;
+    --grey10 : #adadad;
+    --blue1 :#063B4B;
+    --blue2 :#084A5E;
+    --blue3 :#0A5C6F;
+    --blue4 :#0B6783;
+    --blue5 :#0F94BD;
+    --blue6 :#13c0f5;
+    --yellow1 :#F4B942;
+    --green1:#21A03E;
+    --whitesmoke1 : #F5F5F5;
+
+
+}
+
+.dark{
+    --bg: var(--grey0);
+    --bg-nav: linear-gradient(to right, var(--grey1), var(--grey3));
+    --bg-dropdown: var(--grey0);
+    --text : var(--whitesmoke1);
+    --border-color : var(--blue2);
+    --bg-solar : var(--yellow1);
+}
+
+.light{
+    --bg: var(--grey9);
+    --bg-nav: linear-gradient(to right, var(--grey5), var(--grey9));
+    --bg-dropdown: var(--grey5);
+    --text : var(--grey0);
+    --border-color : var(--blue4);
+    --bg-solar : var(--yellow1);
+
+}
+
+.solar{
+
+    --grey0 : #003d03;
+    --grey1 : #007e1f;
+    --grey2 : #b82a2aa8;
+    --grey3 : #b31616;
+    --grey4 : #771b1b;
+    --grey5 : #570505;
+    --grey6 : #531111;
+    --grey7 : #4b2020;
+    --grey8 : #632e2e;
+    --grey9 : #ee8080;
+    --grey10 : #ff8383;
+    --blue1 :#063B4B;
+    --blue2 :#084A5E;
+    --blue3 :#0A5C6F;
+    --blue4 :#0B6783;
+    --blue5 :#0F94BD;
+    --blue6 :#0F94BD;
+    --yellow1 :#F4B942;
+    --green1:#21A03E;
+
 }
