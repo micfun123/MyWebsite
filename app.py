@@ -3,8 +3,12 @@ from flask import Flask, render_template, request, redirect, url_for, flash, jso
 app = Flask(__name__)
 
 @app.route('/')
-def index():
+def home():
     return render_template('index.html')
+
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
 
 
 if __name__ == '__main__':

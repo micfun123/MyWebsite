@@ -42,6 +42,14 @@ header {
     text-align: center;
 }
 
+footer {
+
+    padding: 3em;
+    background: var(--border-color);
+    margin-bottom: 1em;
+    padding-bottom: 3.5em;
+    text-align: center;
+}
 
 .dropdown {
     position: absolute;
