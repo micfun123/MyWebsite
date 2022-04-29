@@ -122,8 +122,10 @@ footer {
     --blue4 :#0B6783;
     --blue5 :#0F94BD;
     --blue6 :#13c0f5;
+    --blue7 :#89CFF0;
     --yellow1 :#F4B942;
     --green1:#21A03E;
+    --whitewhite : #ffffff;
     --whitesmoke1 : #F5F5F5;
 
 
@@ -139,11 +141,11 @@ footer {
 }
 
 .light{
-    --bg: var(--grey9);
+    --bg: var(--whitesmoke1);
     --bg-nav: linear-gradient(to right, var(--grey5), var(--grey9));
     --bg-dropdown: var(--grey5);
     --text : var(--grey0);
-    --border-color : var(--blue4);
+    --border-color : var(--blue7);
     --bg-solar : var(--yellow1);
 
 }
@@ -161,12 +163,13 @@ footer {
     --grey8 : #632e2e;
     --grey9 : #ee8080;
     --grey10 : #ff8383;
-    --blue1 :#063B4B;
-    --blue2 :#084A5E;
-    --blue3 :#0A5C6F;
+    --blue1 :#0c6e05;
+    --blue2 :#085e29;
+    --blue3 :#0a6f22;
     --blue4 :#0B6783;
     --blue5 :#0F94BD;
-    --blue6 :#0F94BD;
+    --blue6 :#25bd0d;
+    --blue7 :#25bd0d;
     --yellow1 :#F4B942;
     --green1:#21A03E;
 
