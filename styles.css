@@ -13,6 +13,13 @@ body {
     background-color: #000000;
 }
 
+.content {
+    width: 800px;
+    margin: auto;
+    border: 1px solid #00FF00;
+    background-color: #000000;
+}
+
 header {
     background: #00FF00;
     color: #000000;
@@ -73,6 +80,17 @@ section {
     padding-left: 20px; 
 }
 
+@font-face {
+    font-family: 'terminal'; /* Name your font family */
+    src: url('VT323-Regular.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
+#welcome{
+    font-weight: bold;
+    font-family: terminal;
+    font-size: 25px;
+}
+
 section h2 {
     color: #00FF00;
     border-bottom: 1px solid #00FF00;
@@ -126,7 +144,7 @@ form input[type="submit"]:hover {
 
 .project-image {
     width: 200px;
-    height: 150px;
+    height: auto;
     margin-right: 20px;
 }
 
