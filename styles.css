@@ -5,6 +5,9 @@ body {
     margin: 0;
     padding: 0;
 }
+a{
+    color: #3aff5b;
+}
 
 .container {
     width: 800px;
