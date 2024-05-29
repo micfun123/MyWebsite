@@ -3,12 +3,11 @@ body {
     background: #000000;
     color: #00FF00;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     font-size: 20px;
 }
 
-
-a{
+a {
     color: #3aff5b;
 }
 
@@ -17,13 +16,16 @@ a{
     margin: auto;
     border: 1px solid #00FF00;
     background-color: #000000;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .content {
-    width: 800px;
+    width: 100%;
     margin: auto;
     border: 1px solid #00FF00;
     background-color: #000000;
+    box-sizing: border-box;
 }
 
 header {
@@ -79,19 +81,19 @@ section {
 }
 
 #about table {
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 #about table td:last-child {
-    padding-left: 20px; 
+    padding-left: 20px;
 }
 
 @font-face {
-    font-family: 'terminal'; /* Name your font family */
-    src: url('VT323-Regular.ttf'); /* Locate the .ttf file within your directory*/
-  }
+    font-family: 'terminal';
+    src: url('VT323-Regular.ttf');
+}
 
-#welcome{
+#welcome {
     font-weight: bold;
     font-family: terminal;
     font-size: 30px;
@@ -146,16 +148,20 @@ form input[type="submit"]:hover {
     margin-bottom: 40px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .project-image {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: auto;
     margin-right: 20px;
 }
 
 .project-info {
     flex: 1;
+    width: calc(100% - 220px);
+    box-sizing: border-box;
 }
 
 .view-button {
@@ -164,8 +170,78 @@ form input[type="submit"]:hover {
     color: #000000;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
+    margin: 5px 0;
 }
 
 .view-button:hover {
     background-color: #00CC00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .project-info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .marquee {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="submit"] {
+        font-size: 16px;
+    }
+
+    .view-button {
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 5px;
+        font-size: 14px;
+    }
 }
