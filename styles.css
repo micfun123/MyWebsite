@@ -201,6 +201,24 @@ form input[type="submit"]:hover {
     .project-info {
         width: 100%;
     }
+
+    /* New styles for the About Me section */
+    #about table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #about table td.profile-picture-cell {
+        order: -1;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 480px) {
