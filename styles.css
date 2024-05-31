@@ -267,7 +267,7 @@ form input[type="submit"]:hover {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 0.15em solid #00FF00;
+    border-right: 0.15em solid #000000;
     animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
@@ -278,5 +278,5 @@ form input[type="submit"]:hover {
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: #00FF00; }
+    50% { border-color: #000000; }
 }
